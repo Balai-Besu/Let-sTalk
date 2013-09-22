@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    android:orientation="vertical" >
+        
+    <TextView
+        android:id="@+id/Text011"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="left|center"
+        android:textColor="@color/logo_color12"
+        android:textSize="@dimen/logo1_size" >
+
+    </TextView>
+    
+  
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:stretchColumns="*" >
+    
+      <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" >
+     
+          <TextView
+             
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="70dp"
+              android:layout_marginStart="40dp"
+              android:text="@string/User"
+              android:textSize="@dimen/size" />
+
+          <EditText
+              android:id="@+id/Edit01"
+              android:layout_width=" 110dp"
+              android:layout_height="wrap_content"
+              android:hint="@string/dispHint"
+              android:inputType="text" >
+
+              <requestFocus />
+          </EditText>
+    
+      </TableRow>
+   
+      <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" >
+        
+        <TextView
+          android:layout_marginStart="40dp"
+           android:id="@+id/Text02"
+           android:textSize="@dimen/size"
+           android:text="@string/Password" />
+        <EditText
+          android:layout_width="wrap_content"
+          android:id="@+id/Edit02"
+          android:hint="@string/dispHint" 
+          android:inputType="textPassword" />
+    
+      </TableRow>
+
+      <TextView
+          android:id="@+id/Text03"
+          android:gravity="center"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:text="@string/forgetpass" />
+
+      <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:gravity="center" >
+     
+          <Button
+              android:id="@+id/signin_button"
+              style="@style/button_text"
+              android:background="@drawable/blue_button"
+              android:text="Sign In"
+              android:onClick="signIn" />
+      </TableRow>
+      
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="25dp"
+          android:layout_marginLeft="20dp"
+          android:text="@string/newusr" />
+      
+       <TableRow
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:gravity="center" >
+     
+          <Button
+              android:id="@+id/signup_button"
+              style="@style/button_text"
+              android:background="@drawable/blue_button"
+              android:text="Sign Up"
+              />
+      </TableRow>
+       <TableRow
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+           android:gravity="center" >
+     
+          <Button
+              android:id="@+id/exit_button"
+              android:layout_height="40dp"
+              style="@style/button_text1"
+              android:background="@drawable/blue_button"   
+              android:text="Exit"
+              android:textStyle="bold"
+              android:onClick="Exit"  />
+
+      </TableRow>
+    
+  </TableLayout>
+    
+</LinearLayout>

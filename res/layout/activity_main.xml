@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/version_bkgrd"
+        android:gravity="center"
+        android:text="@string/app_logo_top"
+        android:textColor="@color/logo_color"
+        android:textSize="@dimen/logo_size" >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/version_bkgrd"
+        android:gravity="top|center"
+        android:text="@string/app_logo_bottom"
+        android:textColor="@color/logo_color"
+        android:textSize="@dimen/logo1_size" >
+    </TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/icon1" >
+            </ImageView>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@color/version_bkgrd1"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/version_spacing"
+        android:text="@string/app_version_info"
+        android:textColor="@color/version_color"
+        android:textSize="@dimen/version_size" />
+
+</LinearLayout>
